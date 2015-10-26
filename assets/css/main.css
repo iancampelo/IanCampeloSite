@@ -88,6 +88,14 @@ body.disabled-onepage-scroll,
 html {
     position: inherit
 }
+@media screen and (max-device-width: 800px) {
+    html {
+        background: url(../ic_logo.png) #000 no-repeat center center fixed;
+    }
+    video {
+        display: none;
+    }
+}
 @font-face {
     font-family: FontAwesome;
     src: url(fonts/fontawesome-webfontba72.eot?v=4.0.3);
@@ -1580,6 +1588,7 @@ section {
     bottom: 10px;
     height: 100px;
     width: 100%
+
 }
 .caret-container h3 {
     font-weight: 300;
@@ -1601,6 +1610,8 @@ section {
     transform: rotate(90deg);
     font-size: 80px;
     font-weight: 100;
+    cursor: pointer;
+    cursor: hand;
     line-height: .36
 }
 .info {
